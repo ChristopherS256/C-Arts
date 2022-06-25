@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a8aba7c705.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+<style>
+    *,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #f3f6f9;
+  font-family: "Raleway", sans-serif;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+/*Start Main Heading*/
+.main-heading {
+  background-image: url(https://i.ibb.co/sbKR4fZ/hero-bg.png);
+  background-position: top left;
+  height: 100vh;
+  background-size: cover;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .left,
+.header .right {
+  display: flex;
+}
+.header .left div:first-of-type {
+  width: 40%;
+  transform: scale(0.7);
+}
+.header .left div:last-of-type {
+  color: white;
+  font-size: 1.3rem;
+  align-self: center;
+  width: 100px;
+  margin-left: 1px;
+  font-weight: bold;
+}
+.header .right {
+  color: white;
+  align-items: center;
+}
+.header .right div:first-of-type {
+  font-size: 18px;
+}
+.header .right div:nth-child(2) {
+  font-size: 25px;
+  margin: 0px 50px;
+}
+.header .right div:last-of-type {
+  font-size: 40px;
+}
+.h-main-content {
+  display: flex;
+}
+.h-main-content > * {
+  flex-basis: 100%;
+  margin-top: 10px;
+}
+.h-main-content .left {
+  align-self: center;
+  flex-basis: 45%;
+}
+.h-main-content .right {
+  display: flex;
+  justify-content: center;
+  flex-basis: fit-content;
+}
+.h-main-content .left p:first-of-type {
+  color: #30f7fe;
+  font-weight: bold;
+  font-size: 4rem;
+  margin: 10px 0px;
+}
+.h-main-content .left p:nth-child(2) {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.h-main-content .left p:nth-child(3) {
+  width: 81%;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+.h-main-content .left p:nth-child(n + 3) {
+  color: rgb(219, 219, 219);
+}
+div[class$="arrow"] {
+  color: white;
+  font-size: 50px;
+  align-self: center;
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+}
+/* Start Our Services */
+.our-services > h3 {
+  text-align: center;
+  font-weight: 300;
+  color: #272727;
+  font-size: 40px;
+  position: relative;
+}
+.our-services > h3::before {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid #272727;
+  width: 116px;
+  bottom: 0;
+  left: 688px;
+}
+.services {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  gap: 50px;
+  text-align: center;
+  margin-top: 45px;
+}
+.services-one p:nth-child(n + 1):nth-child(-n + 2) {
+  font-weight: bold;
+}
+.services-one p:nth-child(2) {
+  font-size: 25px;
+  margin: 9px 0px;
+}
+.services-one div p:last-child {
+  color: #474747;
+  line-height: 1.5;
+}
+.services-one div {
+  transition: 90ms;
+}
+.services-one div:hover {
+  color: #562dd7 !important;
+}
+.ser-icon {
+  font-size: 70px;
+}
+.b-services-buttom {
+  border: none;
+  background-color: #582ed6;
+  color: white;
+  margin: 0 auto;
+  display: block;
+  margin-top: 22px;
+  padding: 10px 39px;
+  border-radius: 15px;
+  border: 1px solid #582ed6;
+  transition: 0.2s;
+  font-size: 17px;
+  cursor: pointer;
+}
+.b-services-buttom:hover {
+  background-color: white;
+  color: #582ed6;
+  border: 1px solid #582ed6;
+}
+/* Start Our Feature Image */
+.the-feature-image-and-discribtion-for-our-page {
+  background-color: #ffffff;
+}
+.feature-image {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.feature-image > * {
+  flex-basis: 100%;
+}
+.feature-image .right {
+  align-self: center;
+  color: #474747;
+}
+.feature-image .right h3 {
+  font-size: 45px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.feature-image .right h3::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #474747;
+  width: 40%;
+  bottom: -9px;
+  left: 0;
+}
+.feature-image .right p {
+  width: 95%;
+  line-height: 1.5;
+}
+/* Start latest News */
+.latest-from-the-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  padding: 35px 0px !important;
+}
+.latest {
+  margin: 0;
+  padding: 0rem 0px 1.25rem;
+}
+.latest h3 {
+  color: #272727;
+  font-size: 35px;
+  font-weight: 100;
+  margin: 0px 0px 24px 103px;
+  position: relative;
+}
+.latest h3::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #272727;
+  width: 15%;
+  bottom: -10px;
+  left: 0;
+  /* height: 100px; */
+}
+.latest-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  gap: 85px;
+  justify-content: center;
+}
+.latest-gallery .texttt p:first-of-type {
+  font-weight: 900;
+  font-size: 21px;
+  margin: 7px 0px;
+  text-transform: capitalize;
+}
+.latest-gallery .texttt p:last-of-type {
+  font-size: 15px;
+  color: #474747;
+  line-height: 1.5;
+  font-family: "Raleway", sans-serif;
+  /* width: 76%; */
+}
+.piece-image {
+  box-shadow: 0px 0px 15px 0px rgb(196, 196, 196);
+  width: fit-content;
+}
+.texttt {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+/* Start Our Team */
+.team-image {
+  background-color: #582ed6;
+  width: fit-content;
+  border-radius: 15px;
+  padding: 12px 35px;
+}
+.piece-team p {
+  text-align: center;
+}
+.piece-team p:first-of-type {
+  color: #474747;
+  font-weight: 900;
+  margin: 13px 0px 4px;
+}
+.piece-team p:last-child {
+  color: #aaa9a9;
+  font-size: 0.8rem;
+}
+.right-arrow-team,
+.left-arrow-team {
+  color: #838383;
+  font-size: 50px;
+  align-self: center;
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+}
+.text-team {
+  font-size: 2rem;
+  font-weight: 400;
+  grid-column: span 5;
+  justify-self: center;
+  position: relative;
+}
+.text-team::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #272727;
+  width: 30%;
+  bottom: -10px;
+  left: 31%;
+}
+.our-team {
+  display: grid;
+  grid-template-rows: auto, 400px;
+  justify-content: space-evenly;
+  row-gap: 50px;
+  padding: 57px 1.25rem !important;
+}
+/* Start Testimonial Section */
+.testimonial {
+  display: grid;
+  grid-template-rows: auto, 400px;
+  justify-content: space-evenly;
+  justify-items: center;
+  padding: 0px 117px !important;
+  position: relative;
+}
+.testimonial-box {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  position: relative;
+  background-color: rgb(255 255 255);
+  padding: 19px 38px;
+  padding: 20px 15px 20px 50px !important;
+  box-shadow: 0 0 32px 0 rgb(0 0 0 / 20%);
+}
+.testimonial-box > p {
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Raleway", sans-serif;
+  color: #484848;
+}
+.testimonial-image {
+  position: absolute;
+  background-color: #582ed6;
+  padding: 14px 18px;
+  border-radius: 50%;
+  top: 66%;
+  left: -10px;
+}
+.testimonial-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.testi-header {
+  grid-column: span 3;
+}
+.testimonial-info {
+  margin-top: 14px;
+}
+.testimonial-info > p:first-of-type {
+  font-weight: 900;
+  font-size: 18px;
+  position: relative;
+  left: -20px;
+}
+.testi-header {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 55px;
+  position: relative;
+}
+.testi-header::before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #272727;
+  width: 30%;
+  bottom: -10px;
+  left: 31%;
+}
+.the-testimonial {
+  background-color: white;
+  padding: 63px 0px 130px;
+}
+.moving-testimonial-boxes {
+  position: absolute;
+  left: 175px;
+  bottom: -75px;
+}
+.moving-testimonial-boxes div {
+  --wAndH: 15px;
+  width: var(--wAndH);
+  height: var(--wAndH);
+  background-color: #582ed6;
+  border-radius: 50%;
+  display: inline-block;
+}
+.moving-testimonial-boxes div:first-of-type {
+  background-color: white;
+  border: 5px solid rgb(169 169 169 / 69%);
+  --wAndH: 20px;
+  position: relative;
+  top: 3px;
+}
+/* Contact-Us */
+.contact-use {
+  display: flex;
+}
+.contact-use > * {
+  flex-basis: 50%;
+}
+.contact-use .left {
+  background-color: #582ed6;
+  padding: 29px 74px 0px 96px;
+}
+/* Start Form Contact Us */
+.h-contact-us {
+  color: #f3f6f9;
+  font-weight: lighter;
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-bottom: 45px;
+}
+.flex-form {
+  display: flex;
+  flex-direction: column;
+}
+.flex-form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #f3f6f9;
+  font-size: 17px;
+  padding: 3px 18px;
+  margin-bottom: 25px;
+  color: #f3f6f9;
+  text-transform: capitalize;
+  transition: 0.4s;
+  position: relative;
+}
+.flex-form input:focus-visible {
+  border: none;
+  border-bottom: 1px solid #f3f6f9;
+  color: white;
+  outline: none;
+}
+button[class="send"] {
+  width: fit-content;
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 100;
+  color: rgb(78, 78, 78);
+  padding: 10px 20px;
+  margin-top: 25px;
+}
+/* Start Useful Links */
+.the-useful-links {
+  background-color: #0f1521;
+}
+.useful-links {
+  display: flex;
+}
+.useful-links > * {
+  flex-basis: 33.333%;
+}
+.usfullinks {
+  color: white;
+  font-weight: 100;
+}
+.usfullinks h2 {
+  margin-bottom: 22px;
+}
+.findus {
+  color: white;
+  font-weight: 100;
+}
+.newsletter {
+  color: white;
+  font-weight: 100;
+}
+.subscribe {
+  border: none;
+  outline: none;
+  background-color: #582ed6;
+  color: white;
+  font-size: 14px;
+  padding: 6px 19px;
+  text-transform: uppercase;
+  position: relative;
+  top: 0px;
+  left: -3px;
+}
+input[class="email-news"] {
+  padding: 5px 28px 5px 20px;
+}
+.useful-links {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: s;
+  justify-content: space-evenly;
+  grid-template-columns: 20% 20% 23%;
+  padding: 60px 0px;
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+}
+.newsletter h2,
+.social-media {
+  align-self: flex-end;
+}
+.emailAndSubscribe {
+  margin: 22px 0px;
+}
+.social-media img:nth-child(2) {
+  margin: 0px 5px;
+}
+.findus h2 {
+  margin-bottom: 20px;
+}
+.findus img {
+  margin-right: 15px;
+  display: inline-block;
+}
+.findus p:nth-child(3) {
+  margin: 20px 0px;
+}
+.usfullinks p {
+  line-height: 1.5;
+}
+/* Start the copyright */
+.copyright {
+  padding: 25px 0px;
+}
+.copyright p {
+  text-align: center;
+  word-spacing: 11px;
+  letter-spacing: 4px;
+}
+
+/*Start My Framework*/
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-position {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container-resp {
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+.image-resp {
+  max-width: 100%;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Start Nav */
+.sidebar-nav {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.sidebar-nav:focus + .nav-entire-page {
+  width: 100vw;
+}
+.nav-entire-page {
+  height: 100vh;
+  width: 0vw;
+  background-color: rgba(93, 42, 225, 0.9);
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: 0.5s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-items div {
+  font-size: 30px !important;
+  margin: 0 !important;
+  text-align: center;
+}
+.nav-items div + div {
+  margin-top: 20px !important;
+}
+.sidebar-nav:focus + .nav-entire-page > .nav-items {
+  display: block;
+}
+.nav-items {
+  display: none;
+}
+.special-header {
+  display: flex;
+}
+@media (max-width: 1150px) {
+  .team-image {
+    width: 255px;
+  }
+  .testimonial-image {
+    left: -46px;
+  }
+  .contact-use .left {
+    padding: 29px 74px 45px 96px;
+  }
+}
+@media (max-width: 950px) {
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial-box:nth-child(3) {
+    margin: 53px 0px;
+  }
+  .contact-use {
+    flex-direction: column;
+  }
+  .subscribe {
+    margin-top: 10px;
+    left: 0;
+  }
+  .piece {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 153px;
+  }
+  .latest-gallery {
+    grid-template-columns: initial;
+    grid-template-rows: repeat(3, 25%);
+    align-content: space-evenly;
+  }
+  .texttt {
+    margin-top: 13px;
+  }
+}
+@media (max-width: 850px) {
+  .services {
+    flex-direction: column;
+  }
+  .our-services > h3::before {
+    left: 340px;
+  }
+  .left-arrow-team,
+  .right-arrow-team {
+    display: none;
+  }
+  .our-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+  }
+  .useful-links {
+    display: grid;
+    gap: 35px;
+    padding: 60px 120px;
+    grid-auto-flow: initial;
+    justify-content: initial;
+    grid-template-columns: initial;
+  }
+  .newsletter h2,
+  .social-media {
+    align-self: initial;
+  }
+  .special-header {
+    flex-direction: column;
+  }
+  .h-main-content .left p:first-of-type {
+    font-size: 3rem;
+  }
+  .h-main-content .left p:nth-child(2) {
+    font-size: 1rem;
+  }
+  .h-main-content .right {
+    width: 50%;
+    align-self: center;
+    margin-top: 12px;
+  }
+  .h-main-content .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .h-main-content .left p:nth-child(n + 3) {
+    text-align: center;
+  }
+}
+@media (max-width: 680px) {
+  .h-main-content .right {
+    width: 70%;
+  }
+  .our-services > h3::before {
+    left: 211px;
+  }
+  .feature-image {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .piece {
+    padding: 10px 29px;
+  }
+  .testimonial {
+    padding: 0px 0px !important;
+  }
+  .contact-use .left {
+    padding: 30px;
+  }
+  .useful-links {
+    padding: 60px;
+  }
+  .latest h3 {
+    text-align: center;
+    margin: 0px;
+  }
+}
+@media (max-width: 435px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header .right {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .header .right div:nth-child(2) {
+    margin: 0px 50px;
+  }
+}
+</style>
+<body>
+    <div class="the-main-heading">
+        <div class="main-heading container-resp">
+            <div class="header">
+                <div class="left">
+                    <div><img src="https://i.ibb.co/0Z8J6vr/Logo.png" alt="" class="image-resp"></div>
+                    <div>Hight Pro</div>
+                </div>
+                <div class="right">
+                    <div>Log in</div>
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <button class="sidebar-nav"> <div><i class="fa-solid fa-bars-staggered"></i></div> </button>
+                    <div class="nav-entire-page">
+                        <div class="nav-items">
+                            <div>HOME</div>
+                            <div>SERVICES</div>
+                            <div>TEAM</div>
+                            <div>BLOG</div>
+                            <div>CONTACT US</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-main-content">
+                <div class="left-arrow"><i class="fa-solid fa-circle-arrow-left"></i></div>
+                <div class="special-header">
+                <div class="left">
+                    <p>Powerpoint</p>
+                    <p>Information On Demand</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas accusamus tempora velit odit quod architecto nisi quasi nam fugit ratione!</p>
+                    <p style="margin-top: 20px;">Contact US</p>
+                </div>
+                <div class="right">
+                    <img src="https://i.ibb.co/Nyjyzvv/slider-img.png" alt="" class="image-resp">
+                </div>
+                </div>
+                <div class="right-arrow"><i class="fa-solid fa-circle-arrow-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Our Services -->
+    <div class="the-our-services">
+        <div class="our-services container-resp">
+            <h3>Our Services</h3>
+            <div class="services">
+                <div class="services-one">
+                    <div>
+                    <p><i class="ser-icon fa-solid fa-database"></i></p>
+                    <p>Storage</p>
+                    <p class="last-p-s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt modi in similique voluptatibus inventore porro iste non error enim alias.</p>
+                    </div>
+                </div>
+                <div class="services-one">
+                    <div>
+                    <i class="ser-icon fa-solid fa-chart-pie"></i>
+                    <p>Analytics</p>
+                    <p class="last-p-s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt modi in similique voluptatibus inventore porro iste non error enim alias.</p>
+                    </div>
+                </div>
+                <div class="services-one">
+                    <div>
+                    <i class="ser-icon fa-solid fa-lock"></i>
+                    <p>Security</p>
+                    <p class="last-p-s">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt modi in similique voluptatibus inventore porro iste non error enim alias.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="services-buttom">
+                <button id="show" class="b-services-buttom">Read More</button>
+            </div>
+        </div>
+    </div>
+    <!-- Start Our Feature Image -->
+    <div class="the-feature-image-and-discribtion-for-our-page">
+        <div class="feature-image container-resp">
+            <div class="left">
+                <img class="left-feature-image image-resp" src="https://i.ibb.co/MfWSkd8/feature-img.png" alt="">
+            </div>
+            <div class="right">
+                <h3>Oustanding Features</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptates repellat fugiat aspernatur? Excepturi provident reprehenderit nesciunt, nobis porro, numquam ad corrupti iste tempora, culpa inventore consequuntur facere! Recusandae consectetur, officia qui laborum sed aliquid debitis itaque doloribus deserunt veniam.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Start latest News -->
+    <div class="latest-from-the-blog">
+        <div class="latest">
+            <h3>Latest From The Blog</h3>
+        </div>
+        <div class="latest-gallery">
+            <div class="piece">
+                <div class="piece-image">
+                    <img src="https://i.ibb.co/frg3bRF/b-1.jpg" alt="" class="image-resp">
+                </div>
+                <div class="texttt">
+                    <p>Tempor incididunt ut labore</p>
+                    <p>Lorem ipsum dolor sit amet, conadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+                </div>
+            </div>
+            <div class="piece">
+                <div class="piece-image">
+                    <img src="https://i.ibb.co/kSGrDJd/b-2.jpg" alt="" class="image-resp">
+                </div>
+                <div class="texttt">
+                    <p>tempor incididunt ut labore</p>
+                    <p>Lorem ipsum dolor sit amet, conadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+                </div>
+            </div>
+            <div class="piece">
+                <div class="piece-image">
+                    <img src="https://i.ibb.co/S3BxL8j/b-3.jpg" alt="" class="image-resp">
+                </div>
+                <div class="texttt">
+                    <p>tempor incididunt ut labore</p>
+                    <p>Lorem ipsum dolor sit amet, conadipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Our Team -->
+    <div class="the-our-team">
+        <div class="our-team container-resp">
+            <div class="text-team">
+                Our Team
+            </div>
+            <!-- <div class="our-team-gallery"> -->
+                <div class="left-arrow-team"><i class="fa-solid fa-circle-arrow-left"></i></div>
+                <div class="piece-team">
+                    <div class="team-image">
+                        <img src="https://i.ibb.co/wpkNCJK/team.png" alt="" class="image-resp">
+                    </div>
+                    <p>Maherco</p>
+                    <p>(CEO)</p>
+                </div>
+                <div class="piece-team">
+                    <div class="team-image">
+                        <img src="https://i.ibb.co/wpkNCJK/team.png" alt="" class="image-resp">
+                    </div>
+                    <p>Maherco</p>
+                    <p>(CEO)</p>
+                </div>
+                <div class="piece-team">
+                    <div class="team-image">
+                        <img src="https://i.ibb.co/wpkNCJK/team.png" alt="" class="image-resp">
+                    </div>
+                    <p>Maherco</p>
+                    <p>(CEO)</p>
+                </div>
+                <div class="right-arrow-team"><i class="fa-solid fa-circle-arrow-right"></i></div>
+            <!-- </div>    -->
+        </div>
+    </div>
+    <!-- Start Testimonial -->
+    <div class="the-testimonial">
+        <div class="testimonial container-resp">
+            <p class="testi-header">Testimonial</p>
+            <div class="testimonial-box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <div class="testimonial-info">
+                    <p>Incid</p>
+                    <p>client</p>
+                </div>
+                <div class="testimonial-image">
+                    <img src="https://i.ibb.co/47b2Y9G/client.png" alt="" class="image-resp">
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <div class="testimonial-info">
+                    <p>Incid</p>
+                    <p>client</p>
+                </div>
+                <div class="testimonial-image">
+                    <img src="https://i.ibb.co/47b2Y9G/client.png" alt="" class="image-resp">
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                <div class="testimonial-info">
+                    <p>Incid</p>
+                    <p>client</p>
+                </div>
+                <div class="testimonial-image">
+                    <img src="https://i.ibb.co/47b2Y9G/client.png" alt="" class="image-resp">
+                </div>
+            </div>
+            <div class="moving-testimonial-boxes">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact-Us -->
+    <div class="the-contact-us">
+        <div class="contact-use">
+            <div class="left"> <!-- Email, Phone, Message, Send -->
+                <form action="" class="contact-us" target="_self" method="get">
+                    <h3 class="h-contact-us">contact us</h3>
+                    <div class="flex-form">
+                        <label for="name" class="name"></label>
+                        <input type="text" name="name" id="name" class="name" placeholder="Name">
+                        <label for="email" class="email"></label>
+                        <input type="email" name="email" id="email" class="email" placeholder="email">
+                        <label for="phone" class="phone"></label>
+                        <input type="text" name="phone" id="phone" class="phone" placeholder="phone">
+                        <label for="message" class="message"></label>
+                        <input type="text" name="message" id="message" class="message" placeholder="message">
+                    <button class="send">Send</button>
+                    </div>
+                </form>
+            </div>
+            <div class="right">
+                <div class="map">
+                    <img src="https://i.ibb.co/xG6Dx2J/Map.jpg" alt="" class="image-resp">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Useful Links -->
+    <div class="the-useful-links">
+        <div class="useful-links">
+            <div class="usfullinks">
+                <h2>Useful Links</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+            </div>
+            <div class="findus">
+                <h2>Find us</h2>
+                <p><img class="imglocation" src="https://i.ibb.co/kBBNCr5/location.png" alt="Location">
+                    It is a long established fact that a reader will be distracted</p>
+                <p><img src="https://i.ibb.co/1dPJX2M/telephone.png" alt="telephone">+01 1234567890</p>
+                <p><img src="https://i.ibb.co/dQpBCGY/mail.png" alt="mail">demo@gmail.com</p>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <div class="emailAndSubscribe">
+                <label for="email-news" class="email-news"></label>
+                <input type="email" name="email-news" id="email-news" class="email-news" placeholder="Enter your email">
+                <button class="subscribe">subscribe</button>
+                </div>
+                <div class="social-media">
+                    <img src="https://i.ibb.co/3h7GNkM/twitter.png" alt="">
+                    <img src="https://i.ibb.co/nC7XY40/instagram.png" alt="">
+                    <img src="https://i.ibb.co/YLMCXDT/fb.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <footer class="the-copyright">
+        <div class="copyright">
+            <p>© 2022 All Rights Reserved By Jamil Hanouenh Made by ❤</p>
+        </div>
+    </footer>
+    <script src="/main.js"></script>
+</body>
+</body>
+</html>
